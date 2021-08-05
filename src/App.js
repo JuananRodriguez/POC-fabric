@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DNIExt from "./dni.png";
+import { Fabric } from "./Fabric";
+
+// const DNI = "https://thegenealogycorner.files.wordpress.com/2019/12/dni4.png";
+// const Image = "https://images.unsplash.com/photo-1551361997-b3147f1942ea";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Fabric imageUrl={DNIExt} />
     </div>
   );
 }
